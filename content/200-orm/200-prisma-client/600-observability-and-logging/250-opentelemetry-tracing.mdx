@@ -136,8 +136,8 @@ import { Resource } from '@opentelemetry/resources'
 // Configure the trace provider
 const provider = new NodeTracerProvider({
   resource: new Resource({
-    [SEMRESATTRS_SERVICE_NAME]: 'example application', // Replace with your service name
-    [SEMRESATTRS_SERVICE_VERSION]: '0.0.1', // Replace with your service version
+    [ATTR_SERVICE_NAME]: 'example application', // Replace with your service name
+    [ATTR_SERVICE_VERSION]: '0.0.1', // Replace with your service version
   }),
 })
 
